@@ -218,7 +218,7 @@ public class Hybrid
 		public void actionPerformed(ActionEvent e) {
 			String event = e.getActionCommand();
 			if (null != event) {
-				logData("MyActionListener | Button clicked: " + event + "\nUse TextArea for picking value from log: " + checkUseTextArea.isSelected() + "\nUse Default File: " + checkDefault.isSelected());
+				logData("MyActionListener | Button clicked: " + event + "\nUse TextArea for picking value from log: " + checkUseTextArea.isSelected() + " \nUse Default File: " + checkDefault.isSelected());
 				if(event.equals(actionBrowse)) {
 					openBrowserPopup();
 				} else if(event.equals(actionFormat)) {
