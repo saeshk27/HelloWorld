@@ -1,0 +1,44 @@
+Welcome to Hybrid tool. If you have any doubts in the usage of this multipurpose tool, please go through the document and get your doubts clarified.
+
+Default Attributes:
+App Home: {path.homeDirectory}
+Search Key: entity id
+Input File for Pick action: {default.inputFile}
+Private Key: {default.privateKeyFilePath}
+Use Text Input: {default.useTextInput}
+Use Default File: {default.useDefaultFile}
+
+Properties file key for default attributes:
+App Home: 'path.homeDirectory'
+Search Key: 'default.searchKey'
+Input File for Pick action: 'default.inputFile'
+Private Key: 'default.privateKeyFilePath'
+Use Text Input: 'default.useTextInput'
+Use Default File: 'default.useDefaultFile'
+
+Functionalities:
+Pick:
+With this action button, one can pick the exact value for the search key provided from a log or any chunk of data. The search can be made from either a log file or by manually entering the data in the search area.
+* If you want to search the key in a file, you can choose the file by using the file chooser by pressing the 'Browse' button.
+* If you want to search the key by entering the text manually in the big text area, please check the 'User Text Input' checkbox.
+* For easier access, by default, the log file is loaded. You can perform a one-click search by directly using the 'Pick' button. Please refer the 'Default Attributes' section above for the exact location.  
+
+Remove Duplicates:
+With this action button, one can remove all the duplicates from a list of data entered in the text area. However, the non-duplicate data will overwrite the text area on performing this action.
+
+List Duplicates:
+With this action button, one can list down all the duplicates and the number of occurrences from a list of data entered in the text area. However, the duplicate data with it's count will overwrite the text area on performing this action.
+
+Format:
+With this action button, one can format the list of data entered in the text area as a filter condition for a sql query. 
+(Eg) Input:
+1
+2
+3
+Output: ('1','2','3')
+
+Open Logs:
+We are logging all the actions performed using the app. With this action button, one can open the location of the log folder for the user to have an audit on the actions performed or to understand the errors or exceptions if any.
+
+Generate DSR:
+Project specific. This will run and fetch the data required for the DSR by using the private key selected. For easier access, by default, the private key is loaded. You can perform a one-click action by directly using the 'Generate DSR' button. Please refer the 'Default Attributes' section above for the exact private key used.
